@@ -1,5 +1,9 @@
 import java.util.ArrayList;
 import java.util.List;
+import static org.junit.Assert.*;
+import java.util.List;
+import org.junit.Before;
+import org.junit.Test;
 
 public class Test1{
 
@@ -7,11 +11,13 @@ public class Test1{
 		return param1 + param2;
 	}
 
-	public double raport(int numarator, int numitor) {
-		if(numitor==0){
-			throw new IllegalArgumentException();
-		}
-		return (double)numarator / numitor;
+	@Test
+	public void suma() {
+		int rezultat=suma(3, 12);
+		int rezultatAsteptat=15;
+		assertEquals(rezultatAsteptat, rezultat);
 	}
+	
+	
 
 }

@@ -14,20 +14,4 @@ public class Test1{
 		return (double)numarator / numitor;
 	}
 
-	public boolean estePar(int numar) {
-		return numar % 2 == 0;
-	}
-
-	public List<Integer> nNumerePare(int n) {
-		if(n==0) {
-			return null;
-		}
-		if(n<0){
-			throw new IllegalArgumentException();
-		}
-		List<Integer> lista = new ArrayList<Integer>();
-		for (int i = 0; i < n; i++)
-			lista.add(i * 2);
-		return lista;
-	}
 }
